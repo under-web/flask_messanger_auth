@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required
+from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 
 app = Flask(__name__)
 app.secret_key = 'mysecretkey'
@@ -54,7 +54,7 @@ def home():
 @app.route('/post', methods=['POST'])
 @login_required
 def post():
-    messages.append(request.form['message'])
+    messages.append(f"{current_user.id}: {request.form['message']}")
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
