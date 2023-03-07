@@ -1,41 +1,110 @@
 body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-      }
-      h1 {
-        color: #333;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        background-color: #fff;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      }
-      form {
-        margin-top: 20px;
-      }
-      input[type="text"] {
-        padding: 5px;
-        border-radius: 5px;
-        border: none;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        width: 70%;
-        margin-right: 10px;
-      }
-      button[type="submit"] {
-        padding: 5px 10px;
-        border-radius: 5px;
-        border: none;
-        background-color: #4caf50;
-        color: #fff;
-        cursor: pointer;
-      }
-      button[type="submit"]:hover {
-        background-color: #3e8e41;
-      }
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* новые стили для ссылок */
+a.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+a.nav-link:hover {
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+a.brand-link {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+a.brand-link:hover {
+    color: #ccc;
+}
