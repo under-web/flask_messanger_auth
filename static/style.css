@@ -49,13 +49,14 @@ label {
     font-weight: bold;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
+    height: calc(1.5em + .75rem + 2px);
 }
 
 input[type="submit"] {
