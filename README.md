@@ -11,4 +11,5 @@
 ## Запуск ## 
 > python app.py
 
-* Отзывы и предложения Telegram: @artymeus * 
+Отзывы и предложения Telegram: @artymeus
+=)
