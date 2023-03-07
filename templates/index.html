@@ -1,16 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<head>
-        <link rel="stylesheet" type="text/css" href="static/style.css">
-        <title>My Website</title>
-</head>
 <h1>Wall</h1>
-    <form method="POST" action="{{ url_for('post') }}">
-        <label for="message">Message:</label>
-        <input type="text" id="message" name="message"><br>
-        <input type="submit" value="Submit">
-    </form>
+<form method="POST" action="{{ url_for('post') }}">
+<label for="message">Message:</label>
+<input type="text" id="message" name="message"><br>
+<input type="submit" value="Submit">
+</form>
 <ul>
 {% for message in messages %}
 <li>{{ message }}</li>
